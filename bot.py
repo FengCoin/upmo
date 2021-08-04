@@ -17,9 +17,9 @@ from prawcore import exceptions
 # CONFIGURATION
 
 # Bot's Username
-USERNAME = "USERNAME"
+USERNAME = "Upmo"
 # Sub to scan for new posts
-SUBREDDIT = "SUBREDDIT"
+SUBREDDIT = "Unixporn"
 # Short description of what the bot does
 USERAGENT = "Automated moderator for r/" + SUBREDDIT
 
@@ -232,10 +232,13 @@ OSSTRING = fillout(OSSTRING)
 # BOT LOGIN
 
 print(SUBREDDIT, "bot\n")
-r = Reddit(client_id=getpass("ID: "),
-           client_secret=getpass("Secret: "),
-           user_agent=USERAGENT,
-           username=USERNAME,
+#after ("ID:  please type in the client id of the bot.
+r = Reddit(client_id="getpass"("ID: "),
+           #After Secret:  please type the secret of the bot
+           client_secret="getpass"("Secret: "),
+           user_agent="USERAGENT",
+           username="USERNAME",
+           #after "password: , please type in the password of the bot.
            password=getpass("Password: "))
 
 try:
